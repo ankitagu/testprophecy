@@ -1,0 +1,120 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "13",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "test1"
+  },
+  "connections" : [ {
+    "id" : "WrOSGuDbscZHfZfDPeZGq",
+    "source" : "ziTa_nZG7Ho10XNCN0t6I$$FlwVOEeDaDuQ5Eu47vUqm",
+    "sourcePort" : "xNduMM3dqt-wV712Dp7fL$$2hfe1apPPdEKGIWsqTmmM",
+    "target" : "1glv3G8nFWffpnR5TDvo9$$YDkTAL0XHx_4DLoYYPyWb",
+    "targetPort" : "DPhjA3HD6Xu1QXnR6Hpd4$$XKJx6lW2cd5IL4crJGJUJ"
+  } ],
+  "processes" : {
+    "ziTa_nZG7Ho10XNCN0t6I$$FlwVOEeDaDuQ5Eu47vUqm" : {
+      "id" : "ziTa_nZG7Ho10XNCN0t6I$$FlwVOEeDaDuQ5Eu47vUqm",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "gcp",
+        "slug" : "gcp",
+        "x" : 440,
+        "y" : 240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xNduMM3dqt-wV712Dp7fL$$2hfe1apPPdEKGIWsqTmmM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/gcp"
+      }
+    },
+    "1glv3G8nFWffpnR5TDvo9$$YDkTAL0XHx_4DLoYYPyWb" : {
+      "id" : "1glv3G8nFWffpnR5TDvo9$$YDkTAL0XHx_4DLoYYPyWb",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : 680,
+        "y" : 260,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DPhjA3HD6Xu1QXnR6Hpd4$$XKJx6lW2cd5IL4crJGJUJ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "oodC3NC9uEc7jClIeSdTG$$KO2ol1oR-XBhTTTP9Tr1W",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "explodedColsNewName" : [ ],
+        "fsExpressions" : [ ],
+        "columnsSelector" : [ ],
+        "explodeColumns" : [ ],
+        "delimiter" : "-"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
